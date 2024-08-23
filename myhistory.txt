@@ -1,0 +1,631 @@
+    1  sudo
+    2  ls
+    3  cd 
+    4  cd ..
+    5  ls
+    6  cd ..
+    7  ls
+    8  cd etc
+    9  ls
+   10  cat sudoers
+   11  nano sudoers
+   12  sudo nano sudoers
+   13  usermod -aG sudo vboxuser
+   14  add vboxuser sudo
+   15  adduser vboxuser sudo
+   16  ls
+   17  cd Downloads/
+   18  ls
+   19  cd ..
+   20  git --version
+   21  vi
+   22  ls
+   23  cd firefox
+   24  firefox
+   25  ls
+   26  su
+   27  ls
+   28  cd ..
+   29  ls
+   30  cd etc
+   31  ls
+   32  cat sudoers
+   33  su
+   34  ls
+   35  sudo
+   36  sudo apt update
+   37  su
+   38  exit
+   39  ls
+   40  cd ..
+   41  ls
+   42  cd etc/
+   43  ls
+   44  nano apt/sources.list
+   45  sudo nano apt/sources.list
+   46  ls
+   47  cd ..
+   48  ls
+   49  cd ..
+   50  ls
+   51  cd etc/
+   52  ls
+   53  sudo nano sudoers
+   54  cd
+   55  ls
+   56  clear
+   57  sudo apt update
+   58  clear
+   59  sudo apt update
+   60  clear
+   61  sudo apt update
+   62  clear
+   63  sudo apt update
+   64  apt-cdrom
+   65  sudo apt update
+   66  sudo apt install git
+   67  sudo apt-get  install git
+   68  sudo apt update
+   69  sudo apt install git
+   70  cd ..
+   71  cd etc/
+   72  sudo nano apt/sources.list
+   73  cd
+   74  clear
+   75  sudo apt update
+   76  sudo apt install git
+   77  sudo apt install vim
+   78  git --version
+   79  ls
+   80  vi
+   81  systemd
+   82  ls
+   83  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
+   84  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+   85  sudo apt update
+   86  sudo apt-get install sublime-text
+   87  sublime-text
+   88  subl --help
+   89  ls
+   90  cleaar
+   91  clear
+   92  ls
+   93  mkdir dev
+   94  ls
+   95  cd dev
+   96  mkdir workflow
+   97  ls
+   98  cd workflow/
+   99  ls
+  100  git init
+  101  git config --global user.name "devit"
+  102  git config --global user.email "ngoufackedgard1@gmail.com"
+  103  ls
+  104  ls -la
+  105  touch Readme.md
+  106  subl Readme.md 
+  107  cat Readme.md 
+  108  ls
+  109  git status
+  110  touch index.html
+  111  subl index.html 
+  112  git status
+  113  echo "bonjour"
+  114  echo "bonjour" > test.txt
+  115  cat test.txt 
+  116  git status
+  117  git add .
+  118  git status
+  119  git commit -m "Premier commit"
+  120  git status
+  121  clear
+  122  ls
+  123  subl bug.txt
+  124  subl Readme.md 
+  125  git status
+  126  git add bug.txt 
+  127  git status
+  128  git commit -m "Correction du bug"
+  129  git status
+  130  ls -la
+  131  subl .gitignore
+  132  git status
+  133  git add .
+  134  ls
+  135  git status
+  136  git commit -m "Add gitignore to untrack logs files"
+  137  ls
+  138  subl journal.log
+  139  git status
+  140  clear
+  141  git log
+  142  git log -p 2
+  143  git log -p -2
+  144  ls
+  145  clear
+  146  git tag
+  147  git tag -a 1.0.0 -m "Initial version"
+  148  git show 1.0.0
+  149  git status
+  150  clear
+  151  git log --oneline
+  152  git checkout -b update_html
+  153  git log --oneline
+  154  subl index.html 
+  155  mozilla index.html 
+  156  firefox index.html 
+  157  git status
+  158  git add .
+  159  git commit -m "update html file by adding form"
+  160  git checkout master
+  161  git merge update_html
+  162  git log --oneline
+  163  git branch -d "update_html"
+  164  git graph
+  165  ls
+  166  subl journal.log 
+  167  git checkout -b "hack"
+  168  subl journal.log 
+  169  git commit -a -m "Ajout des log du  hacking"
+  170  git status
+  171  cat journal.log 
+  172  clear
+  173  git branch
+  174  git checkout master
+  175  cat journal.log 
+  176  git branch
+  177  git checkout hack
+  178  subl journal.log 
+  179  git status
+  180  git log --oneline
+  181  git checkout hack 
+  182  subl test.txt 
+  183  git status
+  184  git commit -a -m "Hacking effectuer"
+  185  git checkout maste
+  186  git branch
+  187  subl test.txt 
+  188  git commit -a -m "Mis a jour du fichier de test"
+  189  git log --oneline
+  190  git config --global core.editor subl
+  191  git branch
+  192  git merge hack
+  193  subl test.txt 
+  194  git status
+  195  git add test.txt 
+  196  ls
+  197  git commit -m "Mis a jour du fichier test sans conflits"
+  198  git branch -d hack 
+  199  git --oneline
+  200  git log --oneline
+  201  ls
+  202  git status
+  203  clear
+  204  touch workflow_type.txt
+  205  subl workflow_type.txt 
+  206  git status
+  207  git commit -a "Resume du workflow"
+  208  git commit -a -m  "Resume du workflow"
+  209  git add .
+  210  git commit -m "Resume du workflow"
+  211  git log --oneline
+  212  ls
+  213  subl remote_tuto.md
+  214  git remote -v
+  215  git remote 
+  216  git status 
+  217  git add .
+  218  git commit -m "Ajout du travail en remote"
+  219  clear
+  220  git log
+  221  ls
+  222  clear
+  223  ls
+  224  git status
+  225  ssh-keygen -t rsa
+  226  ls
+  227  cd ..
+  228  mkdir fork
+  229  cd fork/
+  230  git git@github.com:nmeedg/webapp.git
+  231  git  clone git@github.com:nmeedg/webapp.git
+  232  ls
+  233  cd webapp/
+  234  git status
+  235  git remote -v
+  236  git log --oneline
+  237  ls
+  238  subl README.md 
+  239  git status
+  240  git commit -a -m "Ajout du nom EDGARD"
+  241  git remote -v
+  242  exit
+  243  cd 
+  244  cd ..
+  245  ls
+  246  cd home/
+  247  ls
+  248  cd vboxuser/
+  249  ls
+  250  ls -la
+  251  cd .ssh/
+  252  ls
+  253  cat id_rsa.pub
+  254  cat id_rsa
+  255  cat id_rsa.pub
+  256  exit
+  257  ls
+  258  cd dev
+  259  ls
+  260  cd fork/
+  261  ls
+  262  rm -r webapp/
+  263  ls
+  264  cd webapp/
+  265  ls
+  266  ls -la
+  267  cd ..
+  268  ls
+  269  rm -rf webapp/
+  270  ls
+  271  git clone git@github.com:nmeedg/webapp.git
+  272  ls
+  273  cd webapp/
+  274  git log --oneline
+  275  ls
+  276  subl README.md 
+  277  git checkout edgard
+  278  git checkout -b  edgard
+  279  subl README.md 
+  280  git status
+  281  git commit -a -m "Ajout du nom EDGARD dans readme.md"
+  282  git status
+  283  git remote -v
+  284  git push origin edgard
+  285  ls
+  286  cd
+  287  cd .ssh/
+  288  ls
+  289  git clone git@github.com:nmeedg/webapp.git
+  290  ls
+  291  rm -rf webapp/
+  292  ls
+  293  cd dev/
+  294  lsls
+  295  ls
+  296  cd fork
+  297  git branch
+  298  ls
+  299  cd webapp/
+  300  git branch
+  301  git remote -v
+  302  ls
+  303  cd ..
+  304  ls
+  305  newapp
+  306  mkdir myapp
+  307  cd myapp/
+  308  ls
+  309  git init
+  310  ls
+  311  subl readme.md
+  312  git status
+  313  fir add .
+  314  git commit -m "Ajout du readme.md"
+  315  git add .
+  316  git commit -m "Ajout du readme.md"
+  317  subl note.txt
+  318  git add .
+  319  ls
+  320  git commit -m "ajout des note pour le travail en remote"
+  321  ls
+  322  git checkout -b feature1
+  323  git status
+  324  ls
+  325  subl readme.md
+  326  git status
+  327  git commit -a -m "Ajout du rebase dans readme.md"
+  328  git log --oneline
+  329  git checkout master
+  330  git checkout -b feature2
+  331  ls
+  332  subl note.txt
+  333  git commit -a -m "Add rebase in note"
+  334  git log --oneline
+  335  git rebase feature1
+  336  git log --oneline
+  337  cat note.txt 
+  338  git checkout master
+  339  git merge feature2
+  340  git log --oneline
+  341  subl note.txt 
+  342  git commit -a -m "hotfix on note"
+  343  ls
+  344  git log
+  345  ls
+  346  git checkout feature1
+  347  ls
+  348  cat note.txt 
+  349  git checkout master
+  350  git branch -d feature1
+  351  subl note.txt
+  352  git branch -d feature2
+  353  git status
+  354  subl note.txt 
+  355  ls
+  356  git status
+  357  git checkout -b feature
+  358  git status
+  359  git commit -a -m "Add cherry pick on readme"
+  360  git log --oneline
+  361  subl note.txt 
+  362  subl readme.md 
+  363  git commit -a -m "Add cherry pick on note invert"
+  364  git log --oneline
+  365  git checkout master
+  366  git log --oeline
+  367  git log --oneline
+  368  git cherry-pick 3f8d359
+  369  cat note.txt 
+  370  cat readme.md 
+  371  clear
+  372  cat readme.md
+  373  git log --oneline
+  374  git branch
+  375  cat note.txt 
+  376  git branch -d feature
+  377  git branch -D feature
+  378  clear
+  379  ls
+  380  subl note.txt 
+  381  git status
+  382  git commit -a -m "Debut du git stash"
+  383  ls
+  384  subl mypersonalwork.html
+  385  ls
+  386  git checkout -b test
+  387  ls
+  388  git status
+  389  git stash
+  390  git add .
+  391  git stash
+  392  git log --oneline
+  393  ls
+  394  subl note.txt
+  395  git add .
+  396  git commit -m "Ajout de l'operation git stash"
+  397  git stash list
+  398  git log --oneline
+  399  git stash pop stash@{0}
+  400  git status
+  401  subl mypersonalwork.html 
+  402  ls
+  403  git status
+  404  git add .
+  405  git commit -m "Fin du stash"
+  406  ls
+  407  git status
+  408  git log --oneline
+  409  git rebase -i HEAD^2
+  410  git rebase -i 4968da5
+  411  git log --oneline
+  412  git checkout master
+  413  git rebase test
+  414  git log --oneline
+  415  git branch -d test
+  416  ls
+  417  note note.txt 
+  418  edit note.txt 
+  419  cat note.txt 
+  420  ls
+  421  clear
+  422  git status
+  423  cat note.txt 
+  424  subl note.txt 
+  425  git commit -a -m "Add git reset"
+  426  git branch
+  427  ls
+  428  subl test.txt
+  429  git checkout -b test
+  430  git status
+  431  git add .
+  432  git commit -a -m "Ajout du fichier de test du hard"
+  433  ls
+  434  git log --oneline
+  435  git reset --hard 0997207
+  436  git branch
+  437  ls
+  438  git log --oneline
+  439  echo "765137e (HEAD -> test) Ajout du fichier de test du hard
+  440  0997207 (master) Add git reset
+  441  9658dde Fin du stash
+  442  4968da5 Ajout de l'operation git stash
+  443  4a93750 Debut du git stash
+  444  af3ae09 Add cherry pick on readme
+  445  ca83247 hotfix on note
+  446  df21d04 Add rebase in note
+  447  fac6fd9 Ajout du rebase dans readme.md
+  448  25a7b0e ajout des note pour le travail en remote
+  449  8d57d7c Ajout du readme.md
+  450  " > log.txt
+  451  ls
+  452  git add .
+  453  git commit -a -m "Ajout log terminal"
+  454  ls
+  455  git branch
+  456  git checkout master
+  457  cat note.txt 
+  458  subl
+  459  git statis
+  460  git branch
+  461  git commit -a -m "hotfix note.txt"
+  462  git merge test
+  463  git log --oneline
+  464  ls
+  465  suble
+  466  subl readme.md 
+  467  ls
+  468  git status
+  469  git coomit -m "Fin du versionning"
+  470  git commit -m "Fin du versionning"
+  471  git commit -a -m "Fin du versionning"
+  472  git log --oneline
+  473  git branch -d test
+  474  ls
+  475  git log --oneline
+  476  ls
+  477  git status
+  478  ls
+  479  exit 
+  480  shutdown
+  481  shut down
+  482  exit
+  483  ls
+  484  cd dev/
+  485  ls
+  486  cd fork/
+  487  ls
+  488  cd webapp/
+  489  ls
+  490  git remote add mainstream https://github.com/eazytrainingfr/webapp.git
+  491  subl README.md 
+  492  git remot -v
+  493  git remote -v
+  494  git fetch mainstream master
+  495  git pull mainstream master
+  496  git log --oneline
+  497  git push origin master
+  498  cd ..
+  499  cd myapp/
+  500  ls
+  501  git log --oneline
+  502  git remote add origin https://github.com/nmeedg/myapp.git
+  503  git push origin master
+  504  git remote add origin git@github.com:nmeedg/myapp.git
+  505  git remote add mainstream git@github.com:nmeedg/myapp.git
+  506  git push mainstream master
+  507  exit
+  508  sudo apt update
+  509  cd ..
+  510  ls
+  511  cd mnt
+  512  ls
+  513  cd ..
+  514  ls
+  515  cleare
+  516  clear
+  517  cd /
+  518  ls
+  519  sudo mkdir -p /mnt/cdrom
+  520  sudo mount /dev/cdrom /mnt/cdrom
+  521  cd /mnt/cdrom
+  522  ls
+  523  ls -la
+  524  cd ..
+  525  ls -la
+  526  cd cdrom/
+  527  ls -la
+  528  mkdir help
+  529  help mkdir
+  530  man -k mkdir
+  531  man mkdir
+  532  clear
+  533  ls
+  534  sudo VBoxLinuxAdditions.run
+  535  sudo ./VBoxLinuxAdditions.run
+  536  ls
+  537  lsmod
+  538  lsmod | grep vboxguest
+  539  clear
+  540  cd 
+  541  ls
+  542  claer
+  543  clear
+  544  ps aux
+  545  ps aux | grep vboxguest
+  546  ps
+  547  reboot
+  548  clear
+  549  sudo apt update
+  550  sudo apt install build-essentials dkms linux-headers-$(uname -r)
+  551  sudo apt install build-essential dkms linux-headers-$(uname -r)
+  552  ls
+  553  reboot
+  554  ps aux | grep vboxguest
+  555  cd /
+  556  ls
+  557  cd mnt/
+  558  ls
+  559  cd shared/
+  560  sudo cd shared/
+  561  cd shared/
+  562  su
+  563  exit
+  564  ls
+  565  su
+  566  ps
+  567  ps aux
+  568  ps aux | grep bash
+  569  ps aux | grep sh
+  570  clear
+  571  ps
+  572  date
+  573  pwd
+  574  date help
+  575  man date
+  576  echo "Hello world"
+  577  echo $USER
+  578  man ls
+  579  man echo
+  580  which ech
+  581  which echo
+  582  which bash
+  583  touch run_all.sh
+  584  ls
+  585  subl run_all.sh 
+  586  ls /bin | grep bash
+  587  subl run_all.sh 
+  588  ls -la run_all.sh 
+  589  man chmod
+  590  chmod u+x run_all.sh 
+  591  ls -la run_all.sh 
+  592  ./run_all.sh
+  593  ls
+  594  subl run_all.sh 
+  595  ls
+  596  cd dev
+  597  ls
+  598  mkdir shell
+  599  ls
+  600  cd ..
+  601  ls
+  602  mv run_all.sh dev/shell/
+  603  cd dev/shell/
+  604  ls
+  605  touch name.sh
+  606  ls
+  607  subl name.sh 
+  608  chmod u+x name.sh 
+  609  ls
+  610  sh name.sh 
+  611  clear
+  612  ls
+  613  sh name.sh 
+  614  touch name_2.sh
+  615  subl name_2.sh 
+  616  chmod 777 name_2.sh 
+  617  ls
+  618  sh name_2.sh 
+  619  sh name_2.sh Edgard
+  620  subl
+  621  sh name_2.sh Edgard
+  622  echo "Hello World" > greeting.txt
+  623  cat greeting.txt 
+  624  echo "More text" >> greeting.txt
+  625  cat greeting.txt 
+  626  ls
+  627  ls > fileList.txt
+  628  cat fileList.txt 
+  629  history
+  630  ls > myhistory.txt
+  631  history > myhistory.txt
